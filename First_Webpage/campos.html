@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campos</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Tus datos personales</legend>
+        <div>
+          <label for="nombre">Inrese su nombre de usuario</label>
+          <input
+            id="nombre"
+            type="text"
+            name="username"
+            placeholder="username"
+            required
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Tus datos en la plataforma</legend>
+        <div>
+          <label>
+            Ingrese su contraseña
+            <input
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Contraseña"
+              required
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            Ingrese su email
+            <input type="email" required />
+          </label>
+        </div>
+      </fieldset>
+      <input type="submit" value="Iniciar sesión" />
+    </form>
+    <fieldset>
+      <legend>Tus pasatiempos</legend>
+      <label> <input type="checkbox" />Deporte </label>
+      <label> <input type="checkbox" />Cine </label>
+      <label> <input type="checkbox" />Música </label>
+      <label> <input type="checkbox" />Tech </label>
+      <label> <input type="checkbox" />Science </label>
+    </fieldset>
+    <fieldset>
+      <legend>Tus pasatiempos</legend>
+      <label> <input type="radio" name="gender" />Hombre </label>
+      <label> <input type="radio" name="gender" />Mujer </label>
+      <label> <input type="radio" name="gender" />Prefiero no responder </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Select y opciones</legend>
+      <label for="country">Escoge tu pais</label>
+      <select name="country" id="country">
+        <optgroup label="Latinoamerica">
+          <option value="Perú">Perú</option>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Colombia">Colombia</option>
+        </optgroup>
+        <optgroup label="Europa">
+          <option value="España">España</option>
+        </optgroup>
+      </select>
+    </fieldset>
+    <fieldset>
+      <label
+        >Escribe un mensaje
+        <textarea
+          name="mensaje"
+          id="mensaje"
+          cols="30"
+          rows="10"
+          placeholder="Escribe un mensaje"
+        ></textarea>
+      </label>
+    </fieldset>
+    <div>
+      <label>Ingrese la cantidad que va a comprar</label>
+      <input type="number" value="2" readonly />
+    </div>
+  </body>
+</html>

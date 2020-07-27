@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h1>Formularios</h1>
+    <form action="">
+      <div>
+        <label>
+          Ingrese su nombre de usuario
+          <input
+            id="username"
+            type="text"
+            name="username"
+            placeholder="Nombre de usuario"
+          />
+        </label>
+      </div>
+      <div>
+        <label>
+          Ingrese su contraseña
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+          />
+        </label>
+      </div>
+    </form>
+    <div>
+      <label>
+        Ingrese su email
+        <input type="email" />
+      </label>
+    </div>
+    <div>
+      <label>
+        Tu fecha de nacimiento
+        <input type="date" />
+      </label>
+    </div>
+    <div>
+      <!-- <button>Enviar</button> -->
+      <input type="submit" value="Iniciar Sesión" />
+    </div>
+    <script>
+      document.getElementById("username").addEventListener("keyup", (e) => {
+        console.log(e.target.value);
+      });
+    </script>
+    <div>
+      <label>
+        Ingrese la cantidad de patatas
+        <input type="number" />
+      </label>
+    </div>
+    <h2>Poly Filler Script for Date/Time</h2>
+    <form method="post" action="">
+      <input type="date" />
+      <br /><br />
+      <input type="time" />
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
+    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
+    <script>
+      webshims.setOptions("waitReady", false);
+      webshims.setOptions("forms-ext", { type: "date" });
+      webshims.setOptions("forms-ext", { type: "time" });
+      webshims.polyfill("forms forms-ext");
+    </script>
+  </body>
+</html>

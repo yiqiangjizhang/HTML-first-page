@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+</head>
+<body>
+    <!-- <img 
+        src="./img/bride.jpg" alt="foto de una novia"
+        srcset="./img/minimal.jpg 1.5x
+                ./img/nature.jpg 2x"
+    > -->
+    <picture>
+        <source srcset="./img/nature.jpg" media=" (min-width: 800px)">
+        <source srcset="./img/minimal.jpg" media=" (min-width: 500px)">
+            <img src="./img/bride.jpg" alt="Foto de una novia">
+    </picture>
+</body>
+</html>
